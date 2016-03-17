@@ -1,0 +1,216 @@
+/* Reset/Normalize */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Form specific CSS */
+
+button, 
+input, 
+optgroup, 
+select, 
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+legend {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.form {
+  list-style-type: none;
+  margin: 0 -20px;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.form-item,
+.form > li {
+  float: left;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input {
+  line-height: normal;
+}
+
+input:not([type]),
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"], 
+input[type="color"], 
+input[type="file"], 
+textarea, 
+.select select {
+  background: #fff;
+  border: 1px solid;
+  font-size: 1.143em;
+  padding: 0.5em 1em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+  margin-right: 0.45em;
+}
+
+.form-item input[type="checkbox"], 
+.form>li input[type="checkbox"], 
+.form-item input[type="radio"], 
+.form > li input[type="radio"] {
+  float: left;
+  margin-bottom: 0;
+  margin-top: 0.45em;
+}
+
+.select {
+  position: relative;
+}
+
+.select select {
+  cursor: pointer;
+  text-transform: uppercase;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+  background-image: linear-gradient(to bottom, #fff 0%, #e8e8e8 100%);
+}
+
+/* NOTE: This requires Font Awesome icons!
+   A single icon would be much better.
+*/
+.select::after {
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  line-height: 1;
+  right: 1em;
+  margin-top: -0.55em;
+  top: 50%;
+  position: absolute;
+  pointer-events: none;
+  cursor: pointer;
+  color: #6e6e6e;
+}
+
+input[type="file"] {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+button, 
+html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* Supporting CSS */
+
+/* Buttons */
+.button {
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 0.07em;
+  padding: 0.5em 1.375em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid;
+}
+
+/* Grid */
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 0 20px 0 0;
+}
+
+.inner .inner {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.unit {
+  float: left;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 32em) {
+  .alpha-size1of2, 
+  .alpha-size2of4, 
+  .alpha-size3of6 {
+    width: 50% !important;
+  }
+
+  .alpha-size1of3, 
+  .alpha-size2of6 {
+    width: 33.333333% !important;
+  }
+}
+
+@media screen and (min-width: 52em) { 
+  .inner {
+    padding-right: 3.5rem;
+  }
+  
+  .inner .inner {
+    margin-left: -3.5rem;
+    margin-right: -3.5rem;
+  }
+  
+  .unit {
+    padding-bottom: 20px;
+    padding-left: 3.5rem;
+  }
+
+  .bravo-size1of3, 
+  .bravo-size2of6 {
+    width: 33.333333% !important;
+  }
+
+  .bravo-size2of3, 
+  .bravo-size4of6 {
+    width: 66.666667% !important;
+  }
+  
+  .bravo-size1of1 {
+    width: 100% !important;
+  }
+}
